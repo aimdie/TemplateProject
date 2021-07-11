@@ -2,7 +2,7 @@ plugins {
   kotlin("jvm")
 }
 
-group = "kill.vanity"
+group = "cn.renaldrive"
 version = "1.0"
 
 dependencies {

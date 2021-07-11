@@ -4,8 +4,25 @@ plugins {
   id("kotlin-platform-common")
 }
 
-group = "kill.vanity"
+group = "cn.renaldrive"
 version = "29.7.7"
+
+sourceSets{
+  main{
+    resources.srcDir("zresDir")
+  }
+}
+
+kotlin{
+  sourceSets{
+    main{
+      kotlin.srcDir("srcDir")
+    }
+    test{
+      kotlin.srcDir("testDir")
+    }
+  }
+}
 
 dependencies {
   implementation("org.jetbrains.kotlin:kotlin-stdlib-common:1.5.0")

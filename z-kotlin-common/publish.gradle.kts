@@ -2,7 +2,7 @@ import exm.addLibKotlin
 import exm.addSourceJar
 import exm.sign
 
-val mGroupId = "kill.vanity"
+val mGroupId = "cn.renaldrive"
 val mDevId = "aimdie"
 val mLicenseName = "The Apache License, Version 2.0"
 val mLicenseUrl = "http://www.apache.org/licenses/LICENSE-2.0.txt"
