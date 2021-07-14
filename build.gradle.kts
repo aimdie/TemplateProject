@@ -13,6 +13,8 @@ buildscript {
 
 allprojects {
   repositories {
+    //jetpack包。
+    maven { url = uri("https://maven.pkg.jetbrains.space/public/p/compose/dev") }
     maven("https://www.jetbrains.com/intellij-repository/releases")
     maven("https://repo.huaweicloud.com/repository/maven/")
     google()

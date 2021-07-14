@@ -1,0 +1,3 @@
+//  id("com.android.library")
+classpath("com.android.tools.build:gradle:${Versions.androidBuildTools}")
+ 
