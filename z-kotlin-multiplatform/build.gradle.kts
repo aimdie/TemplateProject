@@ -7,8 +7,18 @@ plugins {
 }
 
 kotlin {
+  
+  metadata {
+    compilations.all {
+      kotlinOptions {
+        //开启"expect"关键字。
+        freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
+      }
+    }
+  }
   android{
-    publishLibraryVariants("release")
+//    publishAllLibraryVariants()
+    publishLibraryVariants("release", "debug")
   }
   /**
    * 方法：fun jvm(name: String = "jvm")
