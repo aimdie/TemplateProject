@@ -1,3 +1,5 @@
+package exm
+
 import org.gradle.api.publish.PublishingExtension
 import org.gradle.api.publish.maven.MavenPublication
 import java.net.URI

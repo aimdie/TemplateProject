@@ -1,6 +1,5 @@
-import exm.addLibKotlin
-import exm.addSourceJar
-import exm.sign
+import exm.*
+import onlycommon.addSourceJar
 
 val mGroupId = "cn.renaldrive"
 val mDevId = "aimdie"

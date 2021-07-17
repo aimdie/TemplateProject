@@ -16,10 +16,6 @@ kotlin {
       }
     }
   }
-  android{
-//    publishAllLibraryVariants()
-    publishLibraryVariants("release", "debug")
-  }
   /**
    * 方法：fun jvm(name: String = "jvm")
    * 1、他就是目录：jvmMain。
@@ -39,17 +35,22 @@ kotlin {
   sourceSets {
     named("commonMain") {
       dependencies {
-//        api("org.jetbrains.kotlin:kotlin-stdlib-common:${Versions.kotlinVersion}")
-//        api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0")
+        implementation(Deps.Kotlin.stdlib)
+        implementation(Deps.Kotlinx.coroutinesCore)
+        implementation(Deps.Kotlinx.serializationJson)
       }
     }
     named("commonTest") {
       dependencies {
-//        implementation(kotlin("test-junit"))
+        implementation(Deps.KotlinTest.test)
       }
     }
-    named("jvmMain")
-    named("jvmTest")
+    named("jvmMain"){
+    
+    }
+    named("jvmTest"){
+    
+    }
     //==================================================
     /**
      * 等效于这些方法：
@@ -58,8 +59,15 @@ kotlin {
      * val jvmMain by getting
      */
   }
+  
 }
-
+//////////////////////////////////////////////////
+kotlin{
+  android{
+//    publishAllLibraryVariants()
+    publishLibraryVariants("release", "debug")
+  }
+}
 android {
   compileSdkVersion(29)
   sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")

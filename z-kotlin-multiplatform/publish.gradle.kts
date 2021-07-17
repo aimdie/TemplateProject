@@ -6,7 +6,13 @@ val mLicenseName = "The Apache License, Version 2.0"
 val mLicenseUrl = "http://www.apache.org/licenses/LICENSE-2.0.txt"
 
 val mArtifactId = "lib-test"
-val mLibVersion = "29.7.7"
+
+var cal: java.util.Calendar = java.util.Calendar.getInstance()
+var year: Int = cal.get(java.util.Calendar.YEAR) - 1992
+var month: Int = cal.get(java.util.Calendar.MONTH) + 1
+var day: Int = cal.get(java.util.Calendar.DATE)
+val mLibVersion = "$year.$month.$day"
+
 val mLibName = "Lib Test"
 val mLibDescription = "该库为测试用"
 val mLibUrl = "无libUrl"
@@ -37,10 +43,10 @@ afterEvaluate {
   plugins.apply("maven-publish")
   extensions.configure<PublishingExtension>("publishing") {
     publications.withType<MavenPublication>().configureEach {
-      println("name=${name}")
       groupId = mGroupId
       artifactId = mArtifactId + getArtifactNameSuffix(name)
-      println("artifactId=${artifactId}")
+//      println("name=${name}")
+//      println("artifactId=${artifactId}")
       pom {
         version = mLibVersion
         name.set(mLibName)
