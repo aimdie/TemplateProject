@@ -1,4 +1,4 @@
-import exm.getArtifactNameSuffix
+import util.*
 
 val mGroupId = "cn.ace"
 val mDevId = "aimdie"
@@ -6,13 +6,7 @@ val mLicenseName = "The Apache License, Version 2.0"
 val mLicenseUrl = "http://www.apache.org/licenses/LICENSE-2.0.txt"
 
 val mArtifactId = "lib-test"
-
-var cal: java.util.Calendar = java.util.Calendar.getInstance()
-var year: Int = cal.get(java.util.Calendar.YEAR) - 1992
-var month: Int = cal.get(java.util.Calendar.MONTH) + 1
-var day: Int = cal.get(java.util.Calendar.DATE)
-val mLibVersion = "$year.$month.$day"
-
+val mLibVersion = getLibVersion()
 val mLibName = "Lib Test"
 val mLibDescription = "该库为测试用"
 val mLibUrl = "无libUrl"

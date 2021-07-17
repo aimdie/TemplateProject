@@ -1,5 +1,5 @@
-import exm.*
 import onlycommon.addSourceJar
+import util.*
 
 val mGroupId = "cn.ace"
 val mDevId = "aimdie"

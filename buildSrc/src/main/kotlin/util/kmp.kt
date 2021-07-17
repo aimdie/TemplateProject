@@ -1,4 +1,4 @@
-package exm
+package util
 
 fun getArtifactNameSuffix(artifactName: String): String {
   return when (artifactName) {

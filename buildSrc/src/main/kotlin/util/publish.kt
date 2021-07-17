@@ -1,4 +1,4 @@
-package exm
+package util
 
 import org.gradle.api.publish.PublishingExtension
 import org.gradle.api.publish.maven.MavenPublication
