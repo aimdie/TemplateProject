@@ -4,8 +4,6 @@ plugins {
   id("kotlin-platform-common")
 }
 
-group = "cn.renaldrive"
-version = "29.7.7"
 
 sourceSets{
   main{
