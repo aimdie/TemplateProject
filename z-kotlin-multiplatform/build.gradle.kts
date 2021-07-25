@@ -38,11 +38,13 @@ kotlin {
         implementation(Deps.Kotlin.stdlib)
         implementation(Deps.Kotlinx.coroutinesCore)
         implementation(Deps.Kotlinx.serializationJson)
+        
+        //        implementation(project(":lib-"))
       }
     }
     named("commonTest") {
       dependencies {
-        implementation(Deps.KotlinTest.test)
+        implementation(Deps.KotlinTest.junit)
       }
     }
     named("jvmMain"){
