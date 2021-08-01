@@ -2,6 +2,8 @@ apply(from = "publish.gradle.kts")
 
 plugins {
   kotlin("multiplatform")
+  kotlin("plugin.serialization")
+
 //  id("com.android.library")
 //  id("kotlin-parcelize")
 }
@@ -39,7 +41,9 @@ kotlin {
         implementation(Deps.Kotlinx.coroutinesCore)
         implementation(Deps.Kotlinx.serializationJson)
         
-        //        implementation(project(":lib-"))
+//        implementation(project(":lib-common"))
+
+//        implementation(project(":lib-"))
       }
     }
     named("commonTest") {
