@@ -1,4 +1,4 @@
-package onlycommon
+package type.common
 
 import org.gradle.api.Project
 import org.gradle.api.publish.maven.MavenPublication
@@ -16,6 +16,7 @@ import org.gradle.kotlin.dsl.registering
  * @该类描述： -
  * @使用说明： -
  */
+
 /**
  * 总源码。
  */

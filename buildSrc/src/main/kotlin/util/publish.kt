@@ -5,6 +5,7 @@ import org.gradle.api.publish.maven.MavenPublication
 import java.net.URI
 
 //////////////////////////////////////////////////
+
 fun MavenPublication.setPomPersonal(
   mGroupId: String,
   mArtifactId: String,

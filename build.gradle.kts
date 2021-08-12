@@ -1,3 +1,5 @@
+import type.kmp.configPublishPlan1
+
 buildscript {
   repositories {
     maven("https://maven.aliyun.com/repository/gradle-plugin")
@@ -27,4 +29,8 @@ allprojects {
     mavenCentral()
     mavenLocal()
   }
+}
+//配置子模块的发布信息。
+subprojects {
+  configPublishPlan1()
 }

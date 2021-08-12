@@ -1,4 +1,4 @@
-package util
+package type.kmp.util
 
 fun getArtifactNameSuffix(artifactName: String): String {
   return when (artifactName) {

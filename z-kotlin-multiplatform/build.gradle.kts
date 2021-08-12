@@ -1,4 +1,4 @@
-apply(from = "publish.gradle.kts")
+
 
 plugins {
   kotlin("multiplatform")

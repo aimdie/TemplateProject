@@ -1,4 +1,3 @@
-apply(from = "publish.gradle.kts")
 
 plugins {
   id("kotlin-platform-common")
